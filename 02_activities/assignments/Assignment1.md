@@ -205,5 +205,12 @@ Consider, for example, concepts of fariness, inequality, social structures, marg
 
 
 ```
-Your thoughts...
+When designing database systems, it is often difficult to foresee that values that are considered as unchangeable by society at one time, might evolve over time. Therefore, these might be embedded in the design of data systems at a fundamental level. For example, in the United States before legalization of same-sex marriage, databases only allowed marriage between a man and a woman, which had to be changed after it was legalized. In addition, groups that are smaller or are marginalized may not be represented properly by database systems. Designers of these systems may be unaware of the peculiarities of these groups or may completely overlook these groups in the process of designing these systems. One such example is in the handling of ‘race’. Most forms have 5 or 6 categories to define race and do not cater to mixed race individuals apart from an all-encompassing “Other” category. 
+Another example that comes to mind is how patriarchy is reflected in a lot of these database systems. For instance, in Pakistan when you get you national identity card made, as a woman, you need to either provide the name of your father or your husband. This means that even if you have been raised by a single mother, you will have to have your father’s name printed on your ID card rather than your mothers. Upon marriage, even if you do not choose to change your name, you will have to have your husband’s name displayed on your card. These are just a few of many more examples that come to mind. In the end, designers of these database systems cannot be blamed as no one can see what changes might occur in society, moral values and social norms in the future. Continuous updating of these systems is a must to keep up with an ever-evolving society. 
+
+
+
+
+
+
 ```
