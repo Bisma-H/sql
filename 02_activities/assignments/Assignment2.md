@@ -53,8 +53,20 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
-```
-Your answer...
+```Type 1:
+
+One way to construct the table is that we only have one row for each customer address. This means, each time there is an address change, we overwrite the previous address. This is type 1 SCD. This will be simpler to implement but will give less information than if we retain older addresses.
+
+Type 2:
+
+The other way to construct this table is to allow multiple rows for each customer - each time the customer changes addresses we enter the new address in a new row. We can also include columns that specify the move-in and move-out dates for the address. This will mean we have more information about the customer and see if for instance the address history and how that effects order probability. But this will mean a larger table and more diffuclt to navigate -will have to filter to know the latest address.This will be a type 2 SCD.
+
+
+
+
+
+
+
 ```
 
 ***
@@ -182,5 +194,5 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+This article talks about how if you trace the start of any machine learning algorithm, you will find that it begins with real people collecting data, building database and putting in effort to create the databases that these algorithms use for training. It further talks about how Amazon Turk workers were initially used to create the image net database. As the work that goes into creating these training databases, relies on human judgement and honesty, there is room for bias and unethical behaviour. For instance, when looking at images of say a dog, just to get a lot of images in (and earn money), Turk workers can randomly add images without caring about the accuracy of it. Further, when looking synonyms for words, several biases can come in. For instance, people from different cultures may recognize different words as related to a certain word, which are not used by people of other cultures. This can create a culturally biased database depending on who is putting in the work. Thus, even if an algorithm is unbiased, if the training data is biased to begin with, the output is likely to be biased as well. Lastly, it seems that tasks that require human judgement or more refined human behaviour like dexterity in stitching or folding, cannot be automated. What we can learn from this is that, however advanced AI becomes, human labor is what it will rely on and it cannot replace human workers in certain fields. They might be able to outperform humans in higher level tasks, but when it comes to folding clothes, humans cannot be replaced. With the age of AI upon us, this tells us how different labor market sectors will be impacted and which sectors will retain their significance.  
 ```
